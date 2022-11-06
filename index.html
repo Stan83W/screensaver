@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+			<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			<title>GSAP Demo</title>
+			<link rel="stylesheet" href="style.css" />
+			<!-- TODO : install GSAP CDN -->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="logo">
+			<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				 viewBox="0 0 2500 1095" style="enable-background:new 0 0 2500 1095;" xml:space="preserve">
+				<style type="text/css">
+					.st0{fill:#FFFFFF;}
+				</style>
+				<path class="st0" d="M2211.8,0.1h-614.7l-331,381.6L1131.1,0.1H219.2l-33.8,141.8h334.4c108.1,0,233.7,49.7,209.4,162.1
+					c-27,125-155.4,185.8-388.4,185.8l67.5-300.6h-233L75.6,621.5h315.8c207.7,0,486.3-60.8,562.4-295.5c20.4-63.1,18.4-119.6,4.1-167.2
+					l1,0l212.8,608l547.2-624.8h347.9c108.1,0,208.3,49.3,185.8,162.1c-20.3,101.3-131.7,185.8-364.8,185.8l67.5-300.6h-233.1
+					l-99.6,432.3h258.4c207.7,0,530.2-60.8,606.2-295.5C2550,131.9,2370.6,0.1,2211.8,0.1z"/>
+				<g>
+					<path class="st0" d="M1131.1,881h-20.2v104.4l20.2-0.3h0c46.2,0,83.6-21.5,83.6-51.2C1214.6,904.3,1177.2,881,1131.1,881z"/>
+					<ellipse class="st0" cx="1800.7" cy="931.4" rx="88.9" ry="56.2"/>
+					<path class="st0" d="M1175,783.1C526.1,783.1,0,852.9,0,939s526.1,155.9,1175,155.9s1175-69.8,1175-155.9S1823.9,783.1,1175,783.1z
+						 M627,1026h-40.5L475.9,840.2h62.5l68.4,114.8l68.4-114.8h62.5L627,1026z M902.3,1026H849V840.2h53.2V1026z M1131.1,1025.8h-72.6
+						V840.2l72.6,0.1c75.8,0,137.3,42.9,137.3,93.6S1206.9,1025.8,1131.1,1025.8z M1547.3,880.7h-100.9l-0.1,30h100.9v38.1h-100.9
+						l0.1,36.6h100.9v40.5h-154.1V840.2h154.1V880.7z M1800.7,1028.1c-75.2,0-136.1-43.3-136.1-96.7s60.9-96.7,136.1-96.7
+						s136.1,43.3,136.1,96.7S1875.8,1028.1,1800.7,1028.1z"/>
+				</g>
+			</svg>
+		</div>
+		
+
+	</div>
+	<!-- TODO : Animate GSAP logo using GSAP -->
+	<script type="text/javascript">
+
+		timeline = gsap.timeline({repeat:-1});
+
+		timeline.to(".logo", {
+			duration: 1.8,
+			x: 350,
+			y: 460,
+			ease:Linear.easeNone
+		})
+		timeline.to(".logo path, ellipse", {
+			duration: 0,
+			fill: "rgb(0,255,0)"
+		})
+
+		timeline.to(".logo", {
+			duration: 2,
+			x: 1060,
+			y: 140,
+			ease:Linear.easeNone
+		})
+		timeline.to(".logo path, ellipse", {
+			duration: 0,
+			fill: "rgb(255,255,0)"
+		})
+
+		timeline.to(".logo", {
+			duration: 0.5,
+			x: 880,
+			y: 0,
+			ease:Linear.easeNone
+		})
+		timeline.to(".logo path, ellipse", {
+			duration: 0,
+			fill: "rgb(0,255,255)"
+		})
+
+		timeline.to(".logo", {
+			duration: 1.3,
+			x: 300,
+			y: 460,
+			ease:Linear.easeNone
+		})
+		timeline.to(".logo path, ellipse", {
+			duration: 0,
+			fill: "rgb(255,0,0)"
+		})
+
+		timeline.to(".logo", {
+			duration: 0.8,
+			x: 0,
+			y: 240,
+			ease:Linear.easeNone
+		})
+		timeline.to(".logo path, ellipse", {
+			duration: 0,
+			fill: "rgb(0,0,255)"
+		})
+
+		timeline.to(".logo", {
+			duration: 1,
+			x: 400,
+			y: 0,
+			ease:Linear.easeNone
+		})
+		timeline.to(".logo path, ellipse", {
+			duration: 0,
+			fill: "rgb(255,0,255)"
+		})
+
+		timeline.to(".logo", {
+			duration: 1.6,
+			x: 850,
+			y: 460,
+			ease:Linear.easeNone
+		})
+		timeline.to(".logo path, ellipse", {
+			duration: 0,
+			fill: "rgb(255,0,0)"
+		})
+
+		timeline.to(".logo", {
+			duration: 0.7,
+			x: 1060,
+			y: 240,
+			ease:Linear.easeNone
+		})
+		timeline.to(".logo path, ellipse", {
+			duration: 0,
+			fill: "rgb(255,255,0)"
+		})
+
+		timeline.to(".logo", {
+			duration: 1,
+			x: 670,
+			y: 0,
+			ease:Linear.easeNone
+		})
+		timeline.to(".logo path, ellipse", {
+			duration: 0,
+			fill: "rgb(0,0,255)"
+		})
+
+		timeline.to(".logo", {
+			duration: 1.5,
+			x: 230,
+			y: 460,
+			ease:Linear.easeNone
+		})
+		timeline.to(".logo path, ellipse", {
+			duration: 0,
+			fill: "rgb(255,0,255)"
+		})
+
+
+		timeline.to(".logo", {
+			duration: 1.2,
+			x: 0,
+			y: 0,
+			ease:Linear.easeNone
+		})
+		timeline.to(".logo path, ellipse", {
+			duration: 0,
+			fill: "rgb(255,255,255)"
+		})
+
+	</script>
+</body>
+</html>
